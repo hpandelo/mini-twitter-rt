@@ -3,7 +3,7 @@ import express from 'express';
 const RoutesConstants = {
   PRIVATE: {
     SERVER_PORT: '3001',
-    MONGODB: 'mongodb+srv://hp:hp@sandbox-xbyq4.gcp.mongodb.net/test?retryWrites=true&w=majority',
+    MONGODB: process.env.MONGODB_URL,
   },
   PUBLIC: {
     ROOT: '/',
